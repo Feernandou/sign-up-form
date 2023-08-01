@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("./images/bg-intro-desktop.png");
+}
+body main {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "lft rgt";
+  gap: 18px;
+  padding-inline: 2em;
+}
+body main .left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  grid-area: lft;
+}
+body main .left .title {
+  font-size: 60px;
+  padding-right: 1.4em;
+  line-height: 1;
+}
+body main .left .description {
+  font-size: 16px;
+  padding-right: 4em;
+}
+body main .right {
+  grid-area: rgt;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .right .ad {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 20px;
+  color: white;
+  box-shadow: 0px 3px 2px 1px hsla(0, 0%, 100%, 0.394);
+}
+body main .right .ad span {
+  font-weight: 600;
+}
+body main .right .form {
+  background-color: white;
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.249);
+}
+body main .right .form > input {
+  padding: 10px;
+}
+body main .right .form > input.error {
+  border: 2px solid red;
+}
+body main .right .form > input.ok {
+  border: 2px solid hsl(154, 59%, 51%);
+}
+body main .right .form > input.errormail {
+  border: 2px solid rgb(255, 132, 0);
+}
+body main .right .form > input::-moz-placeholder {
+  font-weight: 600;
+  padding-left: 20px;
+}
+body main .right .form > input::placeholder {
+  font-weight: 600;
+  padding-left: 20px;
+}
+body main .right .form > a {
+  padding: 15px;
+  background-color: hsl(154, 59%, 51%);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 3px 2px 1px hsla(154, 58%, 38%, 0.92);
+}
+body main .right .form > a:hover {
+  background-color: hsla(154, 59%, 51%, 0.735);
+}
+body main .right .form .message {
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+body main .right .form .message span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 750px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .left {
+    text-align: center;
+    margin-top: 4em;
+  }
+  body main .left .title {
+    font-size: 45px;
+    padding-right: 0;
+  }
+  body main .left .description {
+    padding-right: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
